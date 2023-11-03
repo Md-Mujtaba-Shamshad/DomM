@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events.html</title>
+    <style>
+        div{
+            display: flex;
+            justify-content:space-around;
+            margin-top: 230px;
+            
+            
+        }
+        button{
+            font-size:x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bolder;
+            color: rgb(215, 6, 6);
+            border-width: 50px;
+            border-style: groove;
+            border-color: rgb(96, 71, 8);
+
+        }
+        body{
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <button id="ring"> Ring Bell </button>
+    </div>
+</body>
+<script>
+    let button=document.querySelector("button");
+    button.addEventListener("click",function(){
+        console.log("Please open the door")
+    })
+
+</script>
+</html>
